@@ -20,6 +20,7 @@ namespace CookingPrototype.Kitchen {
 		/// </summary>
 		[UsedImplicitly]
 		public void TryTrashFood() {
+			if ( _place.CurFood == null ) return;
 			if ( _place.CurFood.CurStatus == Food.FoodStatus.Overcooked ) {
 				_place.ExtractFood();
 			}

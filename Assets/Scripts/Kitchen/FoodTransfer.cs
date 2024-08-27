@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-
 using UnityEngine;
-
 using JetBrains.Annotations;
 
 namespace CookingPrototype.Kitchen {
@@ -23,7 +21,7 @@ namespace CookingPrototype.Kitchen {
 			if ( food == null ) {
 				return;
 			}
-
+				
 			if ( OnlyTransferCooked && (food.CurStatus != Food.FoodStatus.Cooked) ) {
 				_place.TryPlaceFood(food);
 				return;
