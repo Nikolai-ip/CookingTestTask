@@ -140,7 +140,7 @@ namespace CookingPrototype.Controllers {
 		/// <returns>Флаг - результат, удалось ли успешно отдать заказ</returns>
 		public bool ServeOrder(Order order) {
 
-			var eligibleCustomers	 = new List<Customer>();
+			var eligibleCustomers = new List<Customer>();
 
 			foreach ( var place in CustomerPlaces ) {
 				var customer = place.CurCustomer;
