@@ -49,7 +49,6 @@ namespace CookingPrototype.Kitchen {
 			if ( !CanAddFood(food) ) {
 				return false;
 			}
-
 			foreach ( var place in Places ) {
 				if ( !place.TryPlaceFood(food) ) {
 					continue;
