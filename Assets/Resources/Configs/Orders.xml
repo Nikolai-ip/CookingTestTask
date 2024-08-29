@@ -19,9 +19,14 @@
         <food needs="BurgerCutlet">BurgerTomato</food>
         <food needs="BurgerCutlet">BurgerCheese</food>
     </order>
-	<order name ="Hotdog">
+		<order name ="Hotdog">
 		<food>HotdogBun</food>
 		<food needs ="HotdogBun">HotdogSausage</food>
+	</order>
+	<order name ="HotdogMustard">
+		<food>HotdogBun</food>
+		<food needs ="HotdogBun">HotdogSausage</food>
+		<food needs ="HotdogSausage">Mustard</food>
 	</order>
     <order name="Cola">
         <food>Cola</food>
